@@ -92,7 +92,7 @@ function App() {
           Demo of all toolkit components (MUI-based). Resize the window to see responsive layout.
         </Typography>
 
-        <Tabs value={tab} onChange={(_, v) => setTab(v)} sx={{ mb: 3 }}>
+        <Tabs value={tab} onChange={(_, v) => setTab(Number(v)}) sx={{ mb: 3 }}>
           <Tab label="Inputs" />
           <Tab label="Data display" />
           <Tab label="Feedback" />
