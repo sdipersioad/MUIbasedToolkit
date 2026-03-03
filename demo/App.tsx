@@ -142,7 +142,7 @@ function App() {
                     labelId="select-label"
                     value={selectValue}
                     label="Option"
-                    onChange={(e) => setSelectValue(e.target.value)}
+                    onChange={(e) => setSelectValue(String(e.target.value))}
                   >
                     <SelectMenuItem value="one">One</SelectMenuItem>
                     <SelectMenuItem value="two">Two</SelectMenuItem>
@@ -174,7 +174,7 @@ function App() {
             <Card>
               <CardContent>
                 <Typography variant="h6" gutterBottom>Radio</Typography>
-                <RadioGroup value={radioValue} onChange={(e) => setRadioValue(e.target.value)} row>
+                <RadioGroup value={radioValue} onChange={(e) => setRadioValue(String(e.target.value))} row>
                   <RadioFormControlLabel value="a" control={<Radio />} label="Option A" />
                   <RadioFormControlLabel value="b" control={<Radio />} label="Option B" />
                   <RadioFormControlLabel value="c" control={<Radio />} label="Option C" />
